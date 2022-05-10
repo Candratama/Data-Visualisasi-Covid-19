@@ -1,7 +1,7 @@
 # Data-Visualisasi-Covid-19
 Data yang digunakan merupakan data pada bulan Maret - Juni 2020
 
-Source Data      \t \t \t  : Data Covid-19 (Mar-Jun 2020).csv
+Source Data  : Data Covid-19 (Mar-Jun 2020).csv
 
 Visualisasi Data dengan Tableau  : Data Visualisasi Covid-19.twb
 
