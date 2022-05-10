@@ -1,0 +1,2390 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0324.2209                               -->
+<workbook original-version='18.1' source-build='2022.1.0 (20221.22.0324.2209)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='DataPersebaranCovid-19diIndonesiaSemester-12020' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='covid_19_indonesia_time_series_all' inline='true' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid_19_indonesia_time_series_all' name='textscan.0wfyghp0sawdi010wrdxq0qyaen7'>
+            <connection class='textscan' directory='C:/Users/wahyu/Downloads' filename='covid_19_indonesia_time_series_all.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wfyghp0sawdi010wrdxq0qyaen7' name='covid_19_indonesia_time_series_all.csv' table='[covid_19_indonesia_time_series_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Location ISO Code' ordinal='1' />
+            <column datatype='string' name='Location' ordinal='2' />
+            <column datatype='integer' name='New Cases' ordinal='3' />
+            <column datatype='integer' name='New Deaths' ordinal='4' />
+            <column datatype='integer' name='New Recovered' ordinal='5' />
+            <column datatype='integer' name='New Active Cases' ordinal='6' />
+            <column datatype='integer' name='Total Cases' ordinal='7' />
+            <column datatype='integer' name='Total Deaths' ordinal='8' />
+            <column datatype='integer' name='Total Recovered' ordinal='9' />
+            <column datatype='integer' name='Total Active Cases' ordinal='10' />
+            <column datatype='string' name='Location Level' ordinal='11' />
+            <column datatype='string' name='City or Regency' ordinal='12' />
+            <column datatype='string' name='Province' ordinal='13' />
+            <column datatype='string' name='Country' ordinal='14' />
+            <column datatype='string' name='Continent' ordinal='15' />
+            <column datatype='string' name='Island' ordinal='16' />
+            <column datatype='string' name='Time Zone' ordinal='17' />
+            <column datatype='string' name='Special Status' ordinal='18' />
+            <column datatype='integer' name='Total Regencies' ordinal='19' />
+            <column datatype='integer' name='Total Cities' ordinal='20' />
+            <column datatype='integer' name='Total Districts' ordinal='21' />
+            <column datatype='integer' name='Total Urban Villages' ordinal='22' />
+            <column datatype='integer' name='Total Rural Villages' ordinal='23' />
+            <column datatype='integer' name='Area (km2)' ordinal='24' />
+            <column datatype='integer' name='Population' ordinal='25' />
+            <column datatype='real' name='Population Density' ordinal='26' />
+            <column datatype='real' name='Longitude' ordinal='27' />
+            <column datatype='real' name='Latitude' ordinal='28' />
+            <column datatype='real' name='New Cases per Million' ordinal='29' />
+            <column datatype='real' name='Total Cases per Million' ordinal='30' />
+            <column datatype='real' name='New Deaths per Million' ordinal='31' />
+            <column datatype='real' name='Total Deaths per Million' ordinal='32' />
+            <column datatype='real' name='Case Fatality Rate' ordinal='33' />
+            <column datatype='real' name='Case Recovered Rate' ordinal='34' />
+            <column datatype='real' name='Growth Factor of New Cases' ordinal='35' />
+            <column datatype='real' name='Growth Factor of New Deaths' ordinal='36' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wfyghp0sawdi010wrdxq0qyaen7' name='covid_19_indonesia_time_series_all.csv' table='[covid_19_indonesia_time_series_all#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='string' name='Location ISO Code' ordinal='1' />
+            <column datatype='string' name='Location' ordinal='2' />
+            <column datatype='integer' name='New Cases' ordinal='3' />
+            <column datatype='integer' name='New Deaths' ordinal='4' />
+            <column datatype='integer' name='New Recovered' ordinal='5' />
+            <column datatype='integer' name='New Active Cases' ordinal='6' />
+            <column datatype='integer' name='Total Cases' ordinal='7' />
+            <column datatype='integer' name='Total Deaths' ordinal='8' />
+            <column datatype='integer' name='Total Recovered' ordinal='9' />
+            <column datatype='integer' name='Total Active Cases' ordinal='10' />
+            <column datatype='string' name='Location Level' ordinal='11' />
+            <column datatype='string' name='City or Regency' ordinal='12' />
+            <column datatype='string' name='Province' ordinal='13' />
+            <column datatype='string' name='Country' ordinal='14' />
+            <column datatype='string' name='Continent' ordinal='15' />
+            <column datatype='string' name='Island' ordinal='16' />
+            <column datatype='string' name='Time Zone' ordinal='17' />
+            <column datatype='string' name='Special Status' ordinal='18' />
+            <column datatype='integer' name='Total Regencies' ordinal='19' />
+            <column datatype='integer' name='Total Cities' ordinal='20' />
+            <column datatype='integer' name='Total Districts' ordinal='21' />
+            <column datatype='integer' name='Total Urban Villages' ordinal='22' />
+            <column datatype='integer' name='Total Rural Villages' ordinal='23' />
+            <column datatype='integer' name='Area (km2)' ordinal='24' />
+            <column datatype='integer' name='Population' ordinal='25' />
+            <column datatype='real' name='Population Density' ordinal='26' />
+            <column datatype='real' name='Longitude' ordinal='27' />
+            <column datatype='real' name='Latitude' ordinal='28' />
+            <column datatype='real' name='New Cases per Million' ordinal='29' />
+            <column datatype='real' name='Total Cases per Million' ordinal='30' />
+            <column datatype='real' name='New Deaths per Million' ordinal='31' />
+            <column datatype='real' name='Total Deaths per Million' ordinal='32' />
+            <column datatype='real' name='Case Fatality Rate' ordinal='33' />
+            <column datatype='real' name='Case Recovered Rate' ordinal='34' />
+            <column datatype='real' name='Growth Factor of New Cases' ordinal='35' />
+            <column datatype='real' name='Growth Factor of New Deaths' ordinal='36' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location ISO Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location ISO Code]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Location ISO Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Cases]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Cases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Deaths]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Deaths</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Recovered]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Recovered</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Active Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Active Cases]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Active Cases</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Cases]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Cases</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Recovered]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Recovered</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Active Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Active Cases]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Active Cases</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Level]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Location Level</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City or Regency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City or Regency]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>City or Regency</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Province]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Province</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Island</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Island]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Island</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time Zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time Zone]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Time Zone</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Special Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Special Status]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Special Status</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Regencies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Regencies]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Regencies</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Cities]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Cities</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Districts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Districts]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Districts</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Urban Villages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Urban Villages]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Urban Villages</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Rural Villages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Rural Villages]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Rural Villages</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area (km2)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area (km2)]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Area (km2)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population Density]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Population Density</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Cases per Million]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Cases per Million</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Cases per Million]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Cases per Million</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[New Deaths per Million]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>New Deaths per Million</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths per Million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Deaths per Million]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Total Deaths per Million</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Fatality Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Case Fatality Rate]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Case Fatality Rate</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Recovered Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Case Recovered Rate]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Case Recovered Rate</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Growth Factor of New Cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Growth Factor of New Cases]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Growth Factor of New Cases</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Growth Factor of New Deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Growth Factor of New Deaths]</local-name>
+            <parent-name>[covid_19_indonesia_time_series_all.csv]</parent-name>
+            <remote-alias>Growth Factor of New Deaths</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City or Regency]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+        </semantic-values>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='covid_19_indonesia_time_series_all.csv' datatype='table' name='[__tableau_internal_object_id__].[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]' role='measure' type='quantitative' />
+      <group caption='Action (Country,Province)' hidden='true' name='[Action (Country,Province)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+          <groupfilter function='level-members' level='[Province]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Date)' hidden='true' name='[Action (Date)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Date]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Province)' hidden='true' name='[Action (Province)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Province]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Country, Province, City or Regency'>
+          <field>[Country]</field>
+          <field>[Province]</field>
+          <field>[City or Regency]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='D:/covid_19_indonesia_time_series_all.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>125</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location ISO Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location ISO Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location ISO Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>2</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Cases</remote-alias>
+              <ordinal>3</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Deaths</remote-alias>
+              <ordinal>4</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Recovered</remote-alias>
+              <ordinal>5</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Active Cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[New Active Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Active Cases</remote-alias>
+              <ordinal>6</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>215</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Cases</remote-alias>
+              <ordinal>7</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>801</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Deaths</remote-alias>
+              <ordinal>8</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>263</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Recovered</remote-alias>
+              <ordinal>9</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>511</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Active Cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Active Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Active Cases</remote-alias>
+              <ordinal>10</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>697</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Level</remote-alias>
+              <ordinal>11</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City or Regency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City or Regency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City or Regency</remote-alias>
+              <ordinal>12</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Province</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Province]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Province</remote-alias>
+              <ordinal>13</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>14</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>15</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Island</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Island]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Island</remote-alias>
+              <ordinal>16</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time Zone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time Zone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time Zone</remote-alias>
+              <ordinal>17</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Special Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Special Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Special Status</remote-alias>
+              <ordinal>18</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Regencies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Regencies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Regencies</remote-alias>
+              <ordinal>19</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Cities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Cities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Cities</remote-alias>
+              <ordinal>20</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Districts</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Districts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Districts</remote-alias>
+              <ordinal>21</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Urban Villages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Urban Villages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Urban Villages</remote-alias>
+              <ordinal>22</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Rural Villages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Rural Villages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Rural Villages</remote-alias>
+              <ordinal>23</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area (km2)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Area (km2)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area (km2)</remote-alias>
+              <ordinal>24</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>25</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population Density</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Population Density]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population Density</remote-alias>
+              <ordinal>26</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>27</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>28</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Cases per Million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[New Cases per Million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Cases per Million</remote-alias>
+              <ordinal>29</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>538</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Cases per Million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Cases per Million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Cases per Million</remote-alias>
+              <ordinal>30</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1415</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Deaths per Million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[New Deaths per Million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Deaths per Million</remote-alias>
+              <ordinal>31</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Deaths per Million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Deaths per Million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Deaths per Million</remote-alias>
+              <ordinal>32</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Fatality Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Case Fatality Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Fatality Rate</remote-alias>
+              <ordinal>33</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Recovered Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Case Recovered Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Recovered Rate</remote-alias>
+              <ordinal>34</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1265</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Growth Factor of New Cases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Growth Factor of New Cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Growth Factor of New Cases</remote-alias>
+              <ordinal>35</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>269</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Growth Factor of New Deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Growth Factor of New Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Growth Factor of New Deaths</remote-alias>
+              <ordinal>36</ordinal>
+              <family>covid_19_indonesia_time_series_all.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='1000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='covid_19_indonesia_time_series_all.csv' id='covid_19_indonesia_time_series_all.csv_0154FF5116EE43B2B5271A4095869C3A'>
+            <properties context=''>
+              <relation connection='textscan.0wfyghp0sawdi010wrdxq0qyaen7' name='covid_19_indonesia_time_series_all.csv' table='[covid_19_indonesia_time_series_all#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Location ISO Code' ordinal='1' />
+                  <column datatype='string' name='Location' ordinal='2' />
+                  <column datatype='integer' name='New Cases' ordinal='3' />
+                  <column datatype='integer' name='New Deaths' ordinal='4' />
+                  <column datatype='integer' name='New Recovered' ordinal='5' />
+                  <column datatype='integer' name='New Active Cases' ordinal='6' />
+                  <column datatype='integer' name='Total Cases' ordinal='7' />
+                  <column datatype='integer' name='Total Deaths' ordinal='8' />
+                  <column datatype='integer' name='Total Recovered' ordinal='9' />
+                  <column datatype='integer' name='Total Active Cases' ordinal='10' />
+                  <column datatype='string' name='Location Level' ordinal='11' />
+                  <column datatype='string' name='City or Regency' ordinal='12' />
+                  <column datatype='string' name='Province' ordinal='13' />
+                  <column datatype='string' name='Country' ordinal='14' />
+                  <column datatype='string' name='Continent' ordinal='15' />
+                  <column datatype='string' name='Island' ordinal='16' />
+                  <column datatype='string' name='Time Zone' ordinal='17' />
+                  <column datatype='string' name='Special Status' ordinal='18' />
+                  <column datatype='integer' name='Total Regencies' ordinal='19' />
+                  <column datatype='integer' name='Total Cities' ordinal='20' />
+                  <column datatype='integer' name='Total Districts' ordinal='21' />
+                  <column datatype='integer' name='Total Urban Villages' ordinal='22' />
+                  <column datatype='integer' name='Total Rural Villages' ordinal='23' />
+                  <column datatype='integer' name='Area (km2)' ordinal='24' />
+                  <column datatype='integer' name='Population' ordinal='25' />
+                  <column datatype='real' name='Population Density' ordinal='26' />
+                  <column datatype='real' name='Longitude' ordinal='27' />
+                  <column datatype='real' name='Latitude' ordinal='28' />
+                  <column datatype='real' name='New Cases per Million' ordinal='29' />
+                  <column datatype='real' name='Total Cases per Million' ordinal='30' />
+                  <column datatype='real' name='New Deaths per Million' ordinal='31' />
+                  <column datatype='real' name='Total Deaths per Million' ordinal='32' />
+                  <column datatype='real' name='Case Fatality Rate' ordinal='33' />
+                  <column datatype='real' name='Case Recovered Rate' ordinal='34' />
+                  <column datatype='real' name='Growth Factor of New Cases' ordinal='35' />
+                  <column datatype='real' name='Growth Factor of New Deaths' ordinal='36' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Slicing' name='[Action1_0A1B616315BD4DED8DC582D710CA71FE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard Data Covid-19' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard Data Covid-19' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Breakdown Per Province'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_indonesia_time_series_all' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1q4bxgp03gd3g41cwsdr60c0kctt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[New Cases]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Cases]' derivation='Sum' name='[sum:New Cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Country]' />
+              <groupfilter function='level-members' level='[Province]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]'>
+            <groupfilter from='&quot;Aceh&quot;' function='range' level='[none:Province:nk]' to='&quot;Sumatera Utara&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]' direction='DESC' using='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' />
+          <slices>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]</rows>
+        <cols>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]</cols>
+      </table>
+      <simple-id uuid='{E46CFE3A-1431-45A9-9C82-F0EBF77261F0}' />
+    </worksheet>
+    <worksheet name='Confirmed Case'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='2'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_indonesia_time_series_all' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q4bxgp03gd3g41cwsdr60c0kctt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Cases]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Cases]' derivation='Sum' name='[sum:New Cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Country]' />
+              <groupfilter function='level-members' level='[Province]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]'>
+            <groupfilter function='level-members' level='[Province]' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Aceh&quot;' function='range' level='[none:Location:nk]' to='&quot;Gorontalo&quot;' />
+              <groupfilter from='&quot;Jambi&quot;' function='range' level='[none:Location:nk]' to='&quot;Sumatera Utara&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='151' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='2' fontcolor='#4e79a7' fontsize='28'>&lt;</run>
+                <run bold='true' fontalignment='2' fontcolor='#4e79a7' fontsize='28'>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]</run>
+                <run bold='true' fontalignment='2' fontcolor='#4e79a7' fontsize='28'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AAC67DCF-673A-4370-A67D-9F7B90B77BEF}' />
+    </worksheet>
+    <worksheet name='Daily New Case'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_indonesia_time_series_all' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q4bxgp03gd3g41cwsdr60c0kctt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Cases]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Cases]' derivation='Sum' name='[sum:New Cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Country]' />
+              <groupfilter function='level-members' level='[Province]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]'>
+            <groupfilter function='level-members' level='[Province]' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Aceh&quot;' function='range' level='[none:Location:nk]' to='&quot;Gorontalo&quot;' />
+              <groupfilter from='&quot;Jambi&quot;' function='range' level='[none:Location:nk]' to='&quot;Sumatera Utara&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' scope='rows' value='Jumlah Kasus' />
+            <format attr='title' class='0' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Date:qk]' scope='cols' value='Tahun' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]</rows>
+        <cols>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{E3F8139A-82B7-4271-8B20-7C872785E580}' />
+    </worksheet>
+    <worksheet name='Death Case'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_indonesia_time_series_all' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q4bxgp03gd3g41cwsdr60c0kctt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[New Deaths]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Deaths]' derivation='Sum' name='[sum:New Deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Country]' />
+              <groupfilter function='level-members' level='[Province]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]'>
+            <groupfilter function='level-members' level='[Province]' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Aceh&quot;' function='range' level='[none:Location:nk]' to='&quot;Gorontalo&quot;' />
+              <groupfilter from='&quot;Jambi&quot;' function='range' level='[none:Location:nk]' to='&quot;Sumatera Utara&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Location:nk]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Country,Province)]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='349' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Deaths:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='2' fontcolor='#e15759' fontsize='26'>&lt;</run>
+                <run bold='true' fontalignment='2' fontcolor='#e15759' fontsize='26'>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Deaths:qk]</run>
+                <run bold='true' fontalignment='2' fontcolor='#e15759' fontsize='26'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{25A3A126-6032-4CDA-BAD8-7CB84CAED6E1}' />
+    </worksheet>
+    <worksheet name='Maps Distribution Covid-19'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid_19_indonesia_time_series_all' name='federated.1q4bxgp03gd3g41cwsdr60c0kctt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1q4bxgp03gd3g41cwsdr60c0kctt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[New Cases]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Province]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Daerah Istimewa Yogyakarta&quot;' value='&quot;DI Yogyakarta&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Province]' derivation='None' name='[none:Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Cases]' derivation='Sum' name='[sum:New Cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]'>
+            <groupfilter function='level-members' level='[Province]' user:ui-action-filter='[Action1_0A1B616315BD4DED8DC582D710CA71FE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]'>
+            <groupfilter function='level-members' level='[none:Province:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Action (Province)]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Latitude (generated)]</column>
+            <column>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Longitude (generated)]' field-type='quantitative' max='17184829.503220379' min='9894638.5364375804' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Latitude (generated)]' field-type='quantitative' max='968774.48435323825' min='-1254532.4083549313' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2dada</color>
+                <color>#f3c3c3</color>
+                <color>#f5abab</color>
+                <color>#f69393</color>
+                <color>#f87c7c</color>
+                <color>#f96363</color>
+                <color>#fa4b4b</color>
+                <color>#fc3232</color>
+                <color>#fd1919</color>
+                <color>#ff0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' value='Indeks Kasus'>
+              <formatted-text>
+                <run>Indeks Kasus</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Country:nk]' />
+              <lod column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[none:Province:nk]' />
+              <color column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' />
+              <geometry column='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Latitude (generated)]</rows>
+        <cols>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{2E6F5143-9CEC-4CC2-84D1-329849D11E77}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard Data Covid-19'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='34625' id='3' name='Maps Distribution Covid-19' show-title='false' w='90600' x='4100' y='8250' />
+        <zone h='9500' id='4' name='Maps Distribution Covid-19' pane-specification-id='0' param='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' type-v2='color' w='14000' x='79600' y='10000' />
+        <zone h='22375' id='5' name='Daily New Case' show-title='false' w='69000' x='25700' y='43875' />
+        <zone h='8750' id='6' name='Confirmed Case' show-title='false' w='19200' x='3800' y='43625' />
+        <zone h='8000' id='7' name='Death Case' show-title='false' w='19500' x='3900' y='55375' />
+        <zone forceUpdate='true' h='3750' id='8' type-v2='text' w='10000' x='12600' y='50375'>
+          <formatted-text>
+            <run fontalignment='2'>Terkonfirmasi</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3750' id='9' type-v2='text' w='10000' x='12600' y='60125'>
+          <formatted-text>
+            <run fontalignment='2'>Meninggal</run>
+          </formatted-text>
+        </zone>
+        <zone h='33250' id='10' name='Breakdown Per Province' w='86100' x='6900' y='78375' />
+        <zone forceUpdate='true' h='3750' id='13' type-v2='text' w='89300' x='4900' y='3125'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Data Persebaran Kasus Covid-19 di Indonesia (Semester-1/2020)</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='16' param='vert' type-v2='layout-flow' w='95734' x='2133' y='667'>
+                <zone forceUpdate='true' h='9917' id='13' type-v2='text' w='95734' x='2133' y='667'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='20'>Data Persebaran Kasus Covid-19 di Indonesia (Semester-1/2020)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='277' h='23750' id='3' is-fixed='true' name='Maps Distribution Covid-19' show-title='false' w='95734' x='2133' y='10584'>
+                  <layout-cache minheight='201' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5417' id='4' name='Maps Distribution Covid-19' pane-specification-id='0' param='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' type-v2='color' w='95734' x='2133' y='34334'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='179' h='15584' id='5' is-fixed='true' name='Daily New Case' show-title='false' w='95734' x='2133' y='39751'>
+                  <layout-cache minheight='155' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='53' h='5084' id='6' is-fixed='true' name='Confirmed Case' show-title='false' w='95734' x='2133' y='55335'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='19' forceUpdate='true' h='2250' id='8' is-fixed='true' type-v2='text' w='95734' x='2133' y='60419'>
+                  <formatted-text>
+                    <run fontalignment='2'>Terkonfirmasi</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='4417' id='7' is-fixed='true' name='Death Case' show-title='false' w='95734' x='2133' y='62669'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2084' id='9' type-v2='text' w='95734' x='2133' y='67086'>
+                  <formatted-text>
+                    <run fontalignment='2'>Meninggal</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='22834' id='10' is-fixed='true' name='Breakdown Per Province' w='95734' x='2133' y='69170'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{77A6BF87-B519-4641-B4BE-E8DD4274E11D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Maps Distribution Covid-19'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3780B8B-B622-4D10-ADA0-44A4B2E0F4C6}' />
+    </window>
+    <window class='worksheet' name='Daily New Case'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{98078B6D-07B5-41A7-8B63-AE9C10A49236}' />
+    </window>
+    <window class='worksheet' name='Breakdown Per Province'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28084B6D-2859-4DF7-9A84-CB1253249775}' />
+    </window>
+    <window class='worksheet' name='Confirmed Case'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A84966A3-EF5C-482B-8417-6FF515DA4B18}' />
+    </window>
+    <window class='worksheet' name='Death Case'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41FADB75-FF6C-4A80-930F-4AFF8696F32A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard Data Covid-19'>
+      <viewpoints>
+        <viewpoint name='Breakdown Per Province' />
+        <viewpoint name='Confirmed Case'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Cases:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>55715</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Daily New Case'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Death Case'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.1q4bxgp03gd3g41cwsdr60c0kctt].[sum:New Deaths:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>2831</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Maps Distribution Covid-19'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D34ED26E-9AE7-4D2A-8DD2-8AC1356122FE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard Data Covid-19' width='192'>
+      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
+      TCaz4/6EzfB/3pe/5PMXDyoAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
